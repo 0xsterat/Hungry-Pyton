@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+    /* className="bg-[#24A1DE]" */
+    background-color:#24A1DE;
+    color: #fff;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    align-items: center;
+}
