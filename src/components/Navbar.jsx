@@ -1,6 +1,7 @@
-import React from 'react'
-
+import React , {useContext}from 'react'
+import { MyContext } from '../Context/MyContext'
 function Navbar() {
+  const { myState } = useContext(MyContext);
   return (
     <div className='flex justify-between mx-[10px]'>
       <div className="flex">
@@ -18,7 +19,7 @@ function Navbar() {
       <div className=''>
        <div>Highest Score : </div>
        <div className='text-center'>  9999</div>
-       <div>Score : 1213</div>
+       <div className=' text-green-800 '>Score : {myState}</div>
       </div>
     </div>
   )

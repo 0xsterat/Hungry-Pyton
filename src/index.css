@@ -1,11 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
 body{
-    /* className="bg-[#24A1DE]" */
     background-color:#24A1DE;
     color: #fff;
     min-height: 100vh;
     background-repeat: no-repeat;
     align-items: center;
+}
+
+
+
+.game-area { 
+	position: relative; 
+	width: 600px; 
+	height: 500px; 
+	border: 2px solid #372d81; 
+	border-radius: 10px; 
+	margin: 50px auto; 
+	display: flex; 
+	flex-wrap: wrap; 
+	box-shadow: 0 0 10px #abbfc0; 
+} 
+
+@media only screen and (max-width: 800px) { 
+	.game-area { 
+		position: relative; 
+		width: 350px; 
+		height: 300px; 
+	} 
+
+	.snake { 
+		width: 12px; 
+		height: 12px; 
+	} 
+} 
+
+.snake { 
+	position: absolute; 
+	width: 5%; 
+	height: 5%; 
+	background-color: #439d0e; 
+	border: 1px solid rgb(8, 19, 74); 
+	z-index: 2; 
+} 
+
+.food { 
+	position: absolute; 
+	width: 12px; 
+	height: 12px; 
+	background-color: rgb(210, 1, 1); 
+	border-radius: 20px; 
+	z-index: 1; 
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color:#24A1DE;
+    color: #fff;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+/* index.css */
+/* body { 
+	background-color: #1e1e1e; 
+}  */
+
+.game-area { 
+	position: relative; 
+	width: 600px; 
+	height: 500px; 
+	border: 2px solid #372d81; 
+	border-radius: 10px; 
+	margin: 50px auto; 
+	display: flex; 
+	flex-wrap: wrap; 
+	box-shadow: 0 0 10px #abbfc0; 
+} 
+
+@media only screen and (max-width: 800px) { 
+	.game-area { 
+		position: relative; 
+		width: 350px; 
+		height: 300px; 
+	} 
+
+	.snake { 
+		width: 12px; 
+		height: 12px; 
+	} 
+} 
+
+.snake { 
+	position: absolute; 
+	width: 5%; 
+	height: 5%; 
+	background-color: #439d0e; 
+	border: 1px solid rgb(8, 19, 74); 
+	z-index: 2; 
+} 
+
+.food { 
+	position: absolute; 
+	width: 12px; 
+	height: 12px; 
+	background-color: rgb(210, 1, 1); 
+	border-radius: 20px; 
+	z-index: 1; 
 }
